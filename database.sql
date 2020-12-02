@@ -229,3 +229,106 @@ VALUES (
   'Ch',
   NULL
 );
+
+ALTER TABLE covid
+ADD total_death int;
+
+UPDATE countries
+SET deaths_total = 7499
+WHERE id_country = 2;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 8245
+WHERE id_country = 1;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 6485
+WHERE id_country = 3;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 2456
+WHERE id_country = 4;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 4275
+WHERE id_country = 5;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 9456
+WHERE id_country = 6;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 8452
+WHERE id_country = 7;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 6456
+WHERE id_country = 8;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 6494
+WHERE id_country = 9;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 6648
+WHERE id_country = 10;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 8124
+WHERE id_country = 11;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 3465
+WHERE id_country = 12;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 5147
+WHERE id_country = 13;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 6752
+WHERE id_country = 14;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 3465
+WHERE id_country = 15;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 9456
+WHERE id_country = 16;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 8456
+WHERE id_country = 17;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 6452
+WHERE id_country = 18;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 7521
+WHERE id_country = 19;
+SELECT * FROM countries;
+
+UPDATE countries
+SET deaths_total = 6415
+WHERE id_country = 20;
+SELECT * FROM countries;
