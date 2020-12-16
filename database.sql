@@ -332,3 +332,15 @@ UPDATE countries
 SET deaths_total = 6415
 WHERE id_country = 20;
 SELECT * FROM countries;
+
+SELECT * FROM countries;
+WHERE name LIKE 'C%';
+
+SELECT * FROM countries;
+WHERE name LIKE '%a';
+
+SELECT * FROM countries;
+WHERE name LIKE 'republic' OR 'Republic';
+
+SELECT * FROM countries;
+WHERE name LIKE '%ra%';
