@@ -344,3 +344,30 @@ WHERE name LIKE 'republic' OR 'Republic';
 
 SELECT * FROM countries;
 WHERE name LIKE '%ra%';
+SELECT *
+FROM countries
+WHERE total_death >= 4000;
+
+SELECT *
+FROM countries
+WHERE total_death >= 1000 AND total_death <= 6000;
+
+SELECT *
+FROM countries
+WHERE total_death <= 1000;
+
+SELECT *
+FROM countries
+WHERE total_death >= 4000;
+
+SELECT *
+FROM countries
+ORDER BY code ASC;
+
+SELECT *
+FROM countries
+ORDER BY code ASC, total_death ASC;
+
+SELECT *
+FROM countries
+WHERE total_death <= 1000 or total_death >= 5000;
