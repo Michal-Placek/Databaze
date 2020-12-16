@@ -332,3 +332,30 @@ UPDATE countries
 SET deaths_total = 6415
 WHERE id_country = 20;
 SELECT * FROM countries;
+SELECT *
+FROM countries
+WHERE total_death >= 4000;
+
+SELECT *
+FROM countries
+WHERE total_death >= 1000 AND total_death <= 6000;
+
+SELECT *
+FROM countries
+WHERE total_death <= 1000;
+
+SELECT *
+FROM countries
+WHERE total_death >= 4000;
+
+SELECT *
+FROM countries
+ORDER BY code ASC;
+
+SELECT *
+FROM countries
+ORDER BY code ASC, total_death ASC;
+
+SELECT *
+FROM countries
+WHERE total_death <= 1000 or total_death >= 5000;
