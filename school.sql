@@ -117,6 +117,7 @@ CREATE TABLE classrooms(
     building int,
     seats_count int,
     is_computers_lab tinyint,
+    PRIMARY KEY (id_classroom)
 );
 INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
 VALUES ('1A', 'Skvělá třída', 1, 8, 1);
@@ -138,3 +139,25 @@ INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
 VALUES ('9A', 'Modrá třída', 1, 7, 1);
 INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
 VALUES ('10A', 'Parádní třída', 2, 2, 0);
+
+ALTER TABLE
+ADD UNIQUE (number)
+
+CREATE TABLE schedule(
+    id_schedule int AUTO_INCREMENT,
+    id_classroom int,
+    id_teacher int,
+    id_subject int,
+    lesson_number int,
+    day_of_week tinyint(5)
+);
+INSERT INTO schedule (id_classroom,id_teacher,id_subject,lesson_number,day_of_week)
+VALUES (1, 1, 1, 1, 1);
+INSERT INTO schedule (id_classroom,id_teacher,id_subject,lesson_number,day_of_week)
+VALUES (2, 2, 2, 2, 2);
+INSERT INTO schedule (id_classroom,id_teacher,id_subject,lesson_number,day_of_week)
+VALUES (3, 3, 3, 3, 3);
+INSERT INTO schedule (id_classroom,id_teacher,id_subject,lesson_number,day_of_week)
+VALUES (4, 4, 4, 4, 4);
+INSERT INTO schedule (id_classroom,id_teacher,id_subject,lesson_number,day_of_week)
+VALUES (5, 5, 5, 5, 5);
