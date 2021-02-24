@@ -109,3 +109,32 @@ WHERE id_subjects = 9;
 UPDATE subjects
 SET shortname = 'Zj'
 WHERE id_subjects = 10;
+
+CREATE TABLE classrooms(
+    id_classroom int AUTO_INCREMENT,
+    number varchar(10),
+    description text,
+    building int,
+    seats_count int,
+    is_computers_lab tinyint,
+);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('1A', 'Skvělá třída', 1, 8, 1);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('2A', 'Dobrá třída', 1, 4, 0);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('3A', 'Nicmoc třída', 2, 6, 0);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('4A', 'Nejlepší třída', 1, 7, 1);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('5A', 'Úžasná třída', 2, 3, 1);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('6A', 'Naprd třída', 1, 4, 1);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('7A', 'Červená třída', 1, 5, 0);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('8A', 'Zelená třída', 2, 9, 0);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('9A', 'Modrá třída', 1, 7, 1);
+INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
+VALUES ('10A', 'Parádní třída', 2, 2, 0);
