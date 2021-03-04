@@ -140,8 +140,8 @@ VALUES ('9A', 'Modrá třída', 1, 7, 1);
 INSERT INTO classrooms (number,description,building,seats_count,is_computer_lab)
 VALUES ('10A', 'Parádní třída', 2, 2, 0);
 
-ALTER TABLE
-ADD UNIQUE (number)
+ALTER TABLE students
+ADD UNIQUE (email);
 
 CREATE TABLE schedule(
     id_schedule int AUTO_INCREMENT,
