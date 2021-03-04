@@ -161,3 +161,10 @@ INSERT INTO schedule (id_classroom,id_teacher,id_subject,lesson_number,day_of_we
 VALUES (4, 4, 4, 4, 4);
 INSERT INTO schedule (id_classroom,id_teacher,id_subject,lesson_number,day_of_week)
 VALUES (5, 5, 5, 5, 5);
+
+SELECT * FROM schedule sch
+JOIN teachers t ON sch.id_teacher = t.id_teacher;
+SELECT * FROM schedule sch
+JOIN classroooms cl ON sch.id_classroom = cl.id_classroom;
+SELECT * FROM schedule sch
+JOIN subjects sub ON sch.id_subject = sub.id_subject;
