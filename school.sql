@@ -179,3 +179,20 @@ ALTER TABLE schedule
 ADD FOREIGN KEY (subject_id)
 REFERENCES subject(id)
 ON DELETE CASCADE;
+
+---------------------------------------------------------------------------------------
+
+ALTER TABLE schedule
+ADD FOREIGN KEY (id_subjects)
+REFERENCES subjects(id_subject)
+ON DELETE CASCADE;
+
+ALTER TABLE schedule
+ADD FOREIGN KEY (id_teacher)
+REFERENCES teacher(id_teacher)
+ON DELETE CASCADE;
+
+ALTER TABLE schedule
+ADD FOREIGN KEY (id_classrooms)
+REFERENCES classrooms(id_classroom)
+ON DELETE CASCADE;
