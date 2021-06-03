@@ -344,8 +344,7 @@ WHERE name LIKE 'republic' OR 'Republic';
 
 SELECT * FROM countries;
 WHERE name LIKE '%ra%';
-SELECT *
-FROM countries
+SELECT * FROM countries
 WHERE total_death >= 4000;
 
 SELECT *

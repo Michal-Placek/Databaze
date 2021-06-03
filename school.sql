@@ -168,3 +168,14 @@ SELECT * FROM schedule sch
 JOIN classroooms cl ON sch.id_classroom = cl.id_classroom;
 SELECT * FROM schedule sch
 JOIN subjects sub ON sch.id_subject = sub.id_subject;
+
+/* příklad */
+SELECT * FROM classification grade
+JOIN grade g ON class.id = t.id;
+JOIN subjects sub ON class. = sud.id;
+JOIN students cl ON class.id = cl.id;
+
+ALTER TABLE schedule
+ADD FOREIGN KEY (subject_id)
+REFERENCES subject(id)
+ON DELETE CASCADE;
