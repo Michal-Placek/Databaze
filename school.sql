@@ -4,7 +4,7 @@ CREATE TABLE students (
     firstname varchar(255) NOT NULL,
     lastname varchar(255) NOT NULL,
     class varchar(10) NOT NULL,
-    email varhcar(255) NOT NULL,
+    email varchar(255) NOT NULL,
     PRIMARY KEY (id_country)
 );
 
