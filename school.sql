@@ -198,10 +198,11 @@ REFERENCES classrooms(id_classroom)
 ON DELETE CASCADE;
 
 ---------------------------------------------------------------------------
-
+.
 SELECT grade,class FROM classification cls
 JOIN students st ON st.id_student = cls.students_id;
 
 SELECT class, AVG(grade) AS 'známka'
-FROM classification,students
+FROM classification c
+JOIN students s ON students_id = id_student
 GROUP BY class;
